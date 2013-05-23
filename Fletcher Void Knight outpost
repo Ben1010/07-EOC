@@ -1,0 +1,48 @@
+program Fletcher;
+begin
+    MoveMouse(564, 227);
+    Wait(RandomRange (50,200));
+    HoldMouse(564, 227, Mouse_Left);
+    //clicksBank
+    Wait(RandomRange (1000, 2000));
+    ReleaseMouse(564, 227, Mouse_Left);
+    MoveMouse(674, 244);//moves to logs
+    Wait(RandomRange (20, 50));
+    HoldMouse(674, 244, Mouse_Right);
+    Wait(RandomRange (50, 200));
+    ReleaseMouse(674, 244, Mouse_Right);//clicks log in bank
+    MoveMouse(689,314);
+    Wait(RandomRange (50, 200));
+    HoldMouse(689, 314, Mouse_Left);
+    Wait(RandomRange (400, 700));
+    ReleaseMouse (689, 314, Mouse_Left);//withdraws all logs
+    MoveMouse(787,131);
+    Wait(RandomRange (50,200));
+    HoldMouse(787, 131, Mouse_Left);//toggles use knife
+    Wait(RandomRange (400, 700));
+    MoveMouse(878, 314);
+    Wait(RandomRange (400, 700));
+    ClickMouse(878, 314, Mouse_left);//Idk I forgot lol :)
+    Wait(RandomRange (20, 50));
+    MoveMouse(921, 318);
+    Wait(RandomRange (20, 50));
+    ClickMouse(921, 318, Mouse_Left); //Uses Knife with log
+    Wait(RandomRange (1000, 2000));
+    MoveMouse(383, 508);//left of right here
+    Wait(RandomRange (1000, 2000));
+    ClickMouse(383, 508, Mouse_Right);
+    Wait(RandomRange (1000, 2000));
+    MoveMouse(370, 508);
+    Wait(RandomRange (1000, 2000));
+    ClickMouse(378, 548, Mouse_Left);
+    Wait(RandomRange (1000, 2000));
+    KeyDown(39);
+    Wait(RandomRange (20, 50));
+    KeyUp(39);
+    Wait(RandomRange (20, 50));
+    KeyDown(39);
+    Wait(RandomRange (20, 50));
+    KeyUp(39);
+    Wait(RandomRange (20, 50));
+    PressKey(13);
+end.                             
