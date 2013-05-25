@@ -28,21 +28,21 @@ begin
     Wait(RandomRange (20, 50));
     ClickMouse(921, 318, Mouse_Left); //Uses Knife with log
     Wait(RandomRange (1000, 2000));
-    MoveMouse(383, 508);//left off right here
+    MoveMouse(383, 508);//left of right here
     Wait(RandomRange (1000, 2000));
     ClickMouse(383, 508, Mouse_Right);
     Wait(RandomRange (1000, 2000));
-    //ReleaseMouse(383, 508, Mouse_Right);
-    //Wait(RandomRange (1000, 2000));
-    MoveMouse(365, 565);
+    MoveMouse(370, 508);
     Wait(RandomRange (1000, 2000));
-    ClickMouse(365, 565, Mouse_Left);
-    Wait(RandomRange (3000, 5000));
-    PressKey(39);
+    ClickMouse(378, 548, Mouse_Left);
+    Wait(RandomRange (1000, 2000));
+    KeyDown(39);
     Wait(RandomRange (20, 50));
-    PressKey(39);
+    KeyUp(39);
+    Wait(RandomRange (20, 50));
+    KeyDown(39);
+    Wait(RandomRange (20, 50));
+    KeyUp(39);
     Wait(RandomRange (20, 50));
     PressKey(13);
-
-
-end.                                    
+end.                             
