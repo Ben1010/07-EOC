@@ -1,5 +1,10 @@
-program Fletcher;
+program repeat_Fletcher;
+  Procedure Repeat_Fletch;
+    var
+  numberOfWaits: Integer;
 begin
+      Repeat
+        Wait(40000);
     MoveMouse(564, 227);
     Wait(RandomRange (50,200));
     HoldMouse(564, 227, Mouse_Left);
@@ -22,27 +27,52 @@ begin
     Wait(RandomRange (400, 700));
     MoveMouse(878, 314);
     Wait(RandomRange (400, 700));
-    ClickMouse(878, 314, Mouse_left);//Idk I forgot lol :)
+    ClickMouse(878, 314, Mouse_left);//Exits Bank (x's out)
     Wait(RandomRange (20, 50));
     MoveMouse(921, 318);
     Wait(RandomRange (20, 50));
     ClickMouse(921, 318, Mouse_Left); //Uses Knife with log
     Wait(RandomRange (1000, 2000));
-    MoveMouse(383, 508);//left of right here
+    MoveMouse(383, 508);
     Wait(RandomRange (1000, 2000));
     ClickMouse(383, 508, Mouse_Right);
     Wait(RandomRange (1000, 2000));
-    MoveMouse(370, 508);
+    //ReleaseMouse(383, 508, Mouse_Right);
+    //Wait(RandomRange (1000, 2000));
+    MoveMouse(365, 565);
     Wait(RandomRange (1000, 2000));
-    ClickMouse(378, 548, Mouse_Left);
-    Wait(RandomRange (1000, 2000));
-    KeyDown(39);
+    ClickMouse(365, 565, Mouse_Left);
+    Wait(RandomRange (3000, 5000));
+    PressKey(39);
     Wait(RandomRange (20, 50));
-    KeyUp(39);
-    Wait(RandomRange (20, 50));
-    KeyDown(39);
-    Wait(RandomRange (20, 50));
-    KeyUp(39);
+    PressKey(39);
     Wait(RandomRange (20, 50));
     PressKey(13);
-end.                             
+    //Need to fix keys when im done with script and add some new anit-bans.
+    Wait(RandomRange (3000, 5000));
+   MoveMouse(564, 227);
+     Wait(RandomRange (500, 1000));
+        ClickMouse(564, 227, Mouse_Left);//Clicks bank to deposit the finished product.
+     Wait(RandomRange (500, 1000));
+   MoveMouse(921, 318);
+    Wait(RandomRange (500, 1000));   //REMINDER I have to remember to note to change the x and y value for choosing the product to make.
+        ClickMouse(921, 318, Mouse_Right);//Right Clicks Finished Products
+    Wait(RandomRange (500, 1000));
+    //MoveMouse(x,y); //dont know value for depositing either all or I may have to add keys.
+    //Wait(RandomRange (500, 1000));
+    //ClickMouse(x,y);
+    //Wait(RandomRange (500, 1000));
+   MoveMouse(674, 244);
+    Wait(RandomRange (500, 1000));
+        ClickMouse(674, 244, Mouse_Right);
+    Wait(RandomRange (500, 1000));//Right Clicks Logs.
+   MoveMouse(689,314);
+      Wait(RandomRange (500, 1000));
+        ClickMouse(689,314, Mouse_Left);
+      Wait(40000);
+   Until(NumberOfWaits = 50000)
+end;
+
+begin
+    repeat_Fletch
+End.                                                                 
