@@ -7,9 +7,9 @@ program NatCrafter;
 
        const
 
-         PLAYER_USERNAME = 'ben1234116';
-         PLAYER_PASSWORD = 'winston';
-         PLAYER_NICK = 'en1234116';
+         PLAYER_USERNAME = '';
+         PLAYER_PASSWORD = '';
+         PLAYER_NICK = '';
          Double_Nats = 'False';
          NatureAltarColour1 = ;
          NatureEntranceColour1 = ;
