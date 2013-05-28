@@ -12,5 +12,10 @@ program NatCrafter;
          NatureAltarColour1 = ;
          NatureAltarColour2 = ;
          NotedPureEssColour = ;
-
-         
+         //Finish adding constants.
+procedure DeclarePlayers;
+   HowManyPlayers := 1;        
+   NumberOfPlayers(HowManyPlayers);
+   Players[0].Name := PLAYER_USERNAME;
+   Players[0].Name := PLAYER_PASSWORD;
+   Players
