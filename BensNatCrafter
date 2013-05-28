@@ -1,0 +1,16 @@
+program NatCrafter;
+{$DEFINE SMART8}
+{$I SRL-OSR/SRL.Simba}
+
+  var 
+       runs, crafted, integer;
+  const
+         PLAYER_USERNAME = '';
+         PLAYER_PASSWORD = '';
+         PLAYER_NICK = '';
+         Double_Nats = 'False';
+         NatureAltarColour1 = ;
+         NatureAltarColour2 = ;
+         NotedPureEssColour = ;
+
+         
