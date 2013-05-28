@@ -2,20 +2,26 @@ program NatCrafter;
 {$DEFINE SMART8}
 {$I SRL-OSR/SRL.Simba}
 
-  var 
-       runs, crafted, integer;
-  const
-         PLAYER_USERNAME = '';
-         PLAYER_PASSWORD = '';
-         PLAYER_NICK = '';
+  var
+       runs, crafted, Money_Used: Integer;
+
+       const
+
+         PLAYER_USERNAME = 'ben1234116';
+         PLAYER_PASSWORD = 'winston';
+         PLAYER_NICK = 'en1234116';
          Double_Nats = 'False';
          NatureAltarColour1 = ;
-         NatureAltarColour2 = ;
-         NotedPureEssColour = ;
+         NatureEntranceColour1 = ;
+         NotedPureEssColour = 7500411;
          //Finish adding constants.
+
 procedure DeclarePlayers;
-   HowManyPlayers := 1;        
+   begin
+   HowManyPlayers := 1;
    NumberOfPlayers(HowManyPlayers);
    Players[0].Name := PLAYER_USERNAME;
    Players[0].Name := PLAYER_PASSWORD;
-   Players
+   Players[0].Name := PLAYER_NICK;
+   Players[0].Active := True;
+   end       
